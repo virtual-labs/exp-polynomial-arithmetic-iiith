@@ -89,61 +89,51 @@
 
 
     const myQuestions = [{
-            question: "1. Sample question1", ///// Write the question inside double quotes
+            question: "1. Under regular addition of polynomials, the sum would contain a term 2x^6. This term becomes ____ and is dropped when the answer is reduced modulo 2. ", ///// Write the question inside double quotes
             answers: {
-                a: "1", ///// Write the option 1 inside double quotes
-                b: "2", ///// Write the option 2 inside double quotes
- 		c: "3", ///// Write the option 3 inside double quotes
-                d: "4", ///// Write the option 4 inside double quotes
+                a: "3x^6", ///// Write the option 1 inside double quotes
+                b: "0x^6", ///// Write the option 2 inside double quotes
+ 		c: "Doesn't change ", ///// Write the option 3 inside double quotes
+                
             },
-            correctAnswer: "c" ///// Write the correct option inside double quotes
+            correctAnswer: "b" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "2.Sample question2",  ///// Write the question inside double quotes
+      question: "2. Each term of the polynomial will be pointing to the other term and the last term will be pointing to ____.",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: " Last coefficient",                  ///// Write the option 1 inside double quotes
+        b: " First coefficient ",                  ///// Write the option 2 inside double quotes
+	c: " Null  ", ///// Write the option 3 inside double quotes
+        d: "The number itself", ///// Write the option 4 inside double quotes
+              },
+      correctAnswer: "c"                ///// Write the correct option inside double quotes
+    },
+
+{
+      question: "3. What are the advantages of using a linked list rather than array? ",  ///// Write the question inside double quotes
+      answers: {
+        a: " List elements can be easily inserted or removed",                  ///// Write the option 1 inside double quotes
+        b: "It is easy compared to array",                  ///// Write the option 2 inside double quotes
+	c: " Both A and B ", ///// Write the option 3 inside double quotes
+        d: "None of the above", ///// Write the option 4 inside double quotes
               },
       correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
 
 {
-      question: "3. Sample question3",  ///// Write the question inside double quotes
+      question: "4. Select any one of the advantage of using Arrays for performing polynomial arithmetic operations? ",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-              },
-      correctAnswer: "b"                ///// Write the correct option inside double quotes
-    },
-
-{
-      question: "4.Sample question3",  ///// Write the question inside double quotes
-      answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-	e: "5 ", ///// Write the option 5 inside double quotes
+        a: " It is straight forward process ",                  ///// Write the option 1 inside double quotes
+        b: "Comparing the exponents is easy process ",                  ///// Write the option 2 inside double quotes
+	c: " Array representation assumes that the exponents of the given expression are arranged from 0 to the infinity", ///// Write the option 3 inside double quotes
+        d: "None of the above ", ///// Write the option 4 inside double quotes
+	 
               },
       correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
 
-{
-      question: "5. Sample question5",  ///// Write the question inside double quotes
-      answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3 ", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
-	e: "5", ///// Write the option 4 inside double quotes
-              },
-      correctAnswer: "d"                ///// Write the correct option inside double quotes
-    },
+
         
     ];
 
