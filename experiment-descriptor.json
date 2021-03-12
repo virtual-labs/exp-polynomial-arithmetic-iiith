@@ -99,22 +99,22 @@
           "unit-type": "task",
           "label": "Demo",
           "content-type": "simulation",
-          "source": "simulation/test.html",
-          "target": "test.html"
+          "source": "simulation/poly-demo.html",
+          "target": "poly-demo.html"
         },
 	{
           "unit-type": "task",
           "label": "Practice",
           "content-type": "simulation",
-          "source": "simulation/test.html",
-          "target": "test.html"
+          "source": "simulation/poly-add-practice.html",
+          "target": "poly-add-practice.html"
         },
 	{
           "unit-type": "task",
           "label": "Exercise",
           "content-type": "simulation",
-          "source": "simulation/test.html",
-          "target": "test.html"
+          "source": "simulation/poly-add-exercise.html",
+          "target": "poly-add-exercise.html"
         },
         {
          "unit-type": "task",
