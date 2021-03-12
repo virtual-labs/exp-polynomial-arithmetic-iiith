@@ -1,0 +1,170 @@
+{
+  "unit-type": "lu",
+  "label": "Polynomial Arithmetic",
+  "basedir": ".",
+  "units": [
+    {
+      "unit-type": "aim"
+    },
+    {
+      "unit-type": "task",
+      "label": "Overview",
+      "content-type": "video",
+      "source": "overview.md",
+      "target": "overview.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Recap",
+      "content-type": "video",
+      "source": "recap.md",
+      "target": "recap.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Pre Test",
+      "content-type": "assesment",
+      "source": "pretest.js",
+      "target": "pretest.html"
+    },
+    {
+      "unit-type": "lu",
+      "label": "Polynomials",
+      "basedir": "polynomials",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+        {
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Algorithm",
+          "content-type": "video",
+          "source": "algorithm.md",
+          "target": "algorithm.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Representation",
+          "content-type": "video",
+          "source": "representation.md",
+          "target": "representation.html"
+        }
+       
+      ]
+    },
+    {
+      "unit-type": "lu",
+      "label": "Polynomial Arithmetic (Linked list)",
+      "basedir": "polynomial-arithmetic-linked-list",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+	{
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Addition of Polynomials",
+          "content-type": "video",
+          "source": "addition-of-polynomials.md",
+          "target": "addition-of-polynomials.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Subtraction of Polynomials",
+          "content-type": "video",
+          "source": "subtraction-of-polynomials.md",
+          "target": "subtraction-of-polynomials.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Multiplication of Polynomials",
+          "content-type": "video",
+          "source": "multiplication-of-polynomials.md",
+          "target": "multiplication-of-polynomials.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Demo",
+          "content-type": "simulation",
+          "source": "simulation/test.html",
+          "target": "test.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Practice",
+          "content-type": "simulation",
+          "source": "simulation/test.html",
+          "target": "test.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Exercise",
+          "content-type": "simulation",
+          "source": "simulation/test.html",
+          "target": "test.html"
+        },
+        {
+         "unit-type": "task",
+         "label": "Quiz",
+         "content-type": "assesment",
+         "source": "polynomials-quiz.js",
+         "target": "polynomials-quiz.html"
+       }
+      ]
+    },
+        {
+      "unit-type": "lu",
+      "label": "Analysis",
+      "basedir": "analysis",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+	{
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Time and Space Complexity",
+          "content-type": "video",
+          "source": "time-and-space-complexity.md",
+          "target": "time-and-space-complexity.html"
+        }
+        
+       
+      ]
+    },
+    {
+      "unit-type": "task",
+      "label": "Post Test",
+      "content-type": "assesment",
+      "source": "posttest.js",
+      "target": "posttest.html"
+    },
+       
+    {
+      "unit-type": "task",
+      "label": "Further Readings/References",
+      "content-type": "text",
+      "source": "further-reading-and-references.md",
+      "target": "further-reading-and-references.html"
+    }
+  ]
+}
