@@ -10,7 +10,7 @@ A Linked list consists of nodes where each node contains a data field and a refe
   - Circular Linked list: In this, the last node of the list holds the address of the first node hence forming a circular chain.
 
 ### Pictorial representation of Linked list
-<img src="images/linkedlist-singly-doubly-circular.png"/>
+<img src="images/linkedlist-singly-doubly-circular.jpg"/>
 
 ### Estimated Time for Pre Test Quiz
 
