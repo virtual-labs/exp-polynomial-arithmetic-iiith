@@ -16,8 +16,9 @@ Learning Objectives of the Experiment
 
 ### Experiment Modules & their Weightage
 
-Module 	Weightage 	Expectation
-Pre-test 	20% 	Solve All Questions
-Polynomials 	20% 	Understand the concept Polynomials
-Polynomial Arithmetic (Linked list) 	40% 	Understand the Polynomial Arithmetic (Linked list)
-Post-test 	20% 	Solve all Questions
+|Module 	|Weightage 	|Expectation|
+|------|--------|----------|
+|Pre-test 	|20% |	Solve All Questions|
+|Polynomials 	|20% |	Understand the concept Polynomials|
+|Polynomial Arithmetic (Linked list) 	|40% 	|Understand the Polynomial Arithmetic (Linked list)|
+|Post-test 	|20% 	|Solve all Questions|
