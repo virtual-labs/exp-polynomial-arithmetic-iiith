@@ -10,8 +10,8 @@
 
 ### Best and Worst case of Polynomial using Linked list
 
-    Worst case analysis is used to find an upper bound on algorithm performance for large problems (large n)
-    Best case analysis determines the average (or expected) performance Worst case time complexity is usually simpler to work out
+   Worst case analysis is used to find an upper bound on algorithm performance for large problems (large n)
+   Best case analysis determines the average (or expected) performance Worst case time complexity is usually simpler to work out
 
 ### Comparison of Polynomial with other Algorithms
 <img src="images/time-complexity.jpg"/>
