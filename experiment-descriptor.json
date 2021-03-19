@@ -61,7 +61,7 @@
     },
     {
       "unit-type": "lu",
-      "label": "Polynomial Arithmetic (Linked list)",
+      "label": "Polynomial Arithmetic-Linked List",
       "basedir": "polynomial-arithmetic-linked-list",
       "units": [
         {
