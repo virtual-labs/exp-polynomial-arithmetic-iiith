@@ -1,6 +1,3 @@
-### Estimated Time
-
-1 hour
 ### A Short Introduction to Experiment
 <iframe src="https://www.youtube.com/embed/Bb6TsOG2bqQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

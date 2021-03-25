@@ -67,30 +67,24 @@
         {
           "unit-type": "aim"
         },
-	{
-          "unit-type": "task",
-          "label": "Overview",
-          "content-type": "video",
-          "source": "overview.md",
-          "target": "overview.html"
-        },
+	
         {
           "unit-type": "task",
-          "label": "Addition of Polynomials",
+          "label": "Addition",
           "content-type": "video",
           "source": "addition-of-polynomials.md",
           "target": "addition-of-polynomials.html"
         },
 	{
           "unit-type": "task",
-          "label": "Subtraction of Polynomials",
+          "label": "Subtraction",
           "content-type": "video",
           "source": "subtraction-of-polynomials.md",
           "target": "subtraction-of-polynomials.html"
         },
 	{
           "unit-type": "task",
-          "label": "Multiplication of Polynomials",
+          "label": "Multiplication",
           "content-type": "video",
           "source": "multiplication-of-polynomials.md",
           "target": "multiplication-of-polynomials.html"
@@ -118,7 +112,7 @@
         },
         {
          "unit-type": "task",
-         "label": "Polynomials Quiz",
+         "label": "Quiz",
          "content-type": "assesment",
          "source": "polynomials-quiz.js",
          "target": "polynomials-quiz.html"
@@ -133,13 +127,7 @@
         {
           "unit-type": "aim"
         },
-	{
-          "unit-type": "task",
-          "label": "Overview",
-          "content-type": "video",
-          "source": "overview.md",
-          "target": "overview.html"
-        },
+	
         {
           "unit-type": "task",
           "label": "Time and Space Complexity",
