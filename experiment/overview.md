@@ -3,7 +3,7 @@
 
 ### Prerequisites of the Experiment
 
-   - Basic knowledge on Linked List
+   - Basic knowledge on [Linked List](https://ds1-iiith.vlabs.ac.in/exp/linked-list/index.html)
    - And above all, a curiosity to learn and explore..!
 
 ### Overview of the Experiment
