@@ -1,9 +1,9 @@
-### A Short Introduction to Experiment
+<!--### A Short Introduction to Experiment-->
 <iframe src="https://www.youtube.com/embed/Bb6TsOG2bqQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Prerequisites of the Experiment
 
-   - Basic knowledge on Linked List
+   - Basic knowledge on [Linked List](https://ds1-iiith.vlabs.ac.in/exp/linked-list/index.html)
    - And above all, a curiosity to learn and explore..!
 
 ### Overview of the Experiment
