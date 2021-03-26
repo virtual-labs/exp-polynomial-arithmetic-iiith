@@ -9,7 +9,6 @@
       3. Number of array elements accessed
 
 ### Best and Worst case of Polynomial using Linked list
-
    Worst case analysis is used to find an upper bound on algorithm performance for large problems (large n)
    Best case analysis determines the average (or expected) performance Worst case time complexity is usually simpler to work out
 
