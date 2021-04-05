@@ -19,7 +19,7 @@
       "content-type": "video",
       "source": "recap.md",
       "target": "recap.html"
-    }
+    },
     {
       "unit-type": "lu",
       "label": "Polynomials",
