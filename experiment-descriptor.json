@@ -19,14 +19,7 @@
       "content-type": "video",
       "source": "recap.md",
       "target": "recap.html"
-    },
-    {
-      "unit-type": "task",
-      "label": "Pre Test Quiz",
-      "content-type": "assesment",
-      "source": "pretest.js",
-      "target": "pretest.html"
-    },
+    }
     {
       "unit-type": "lu",
       "label": "Polynomials",
@@ -109,14 +102,7 @@
           "content-type": "simulation",
           "source": "simulation/poly-add-exercise.html",
           "target": "poly-add-exercise.html"
-        },
-        {
-         "unit-type": "task",
-         "label": "Quiz",
-         "content-type": "assesment",
-         "source": "polynomials-quiz.js",
-         "target": "polynomials-quiz.html"
-       }
+        }
       ]
     },
         {
@@ -139,15 +125,7 @@
        
       ]
     },
-    
-    {
-      "unit-type": "task",
-      "label": "Post Test Quiz",
-      "content-type": "assesment",
-      "source": "posttest.js",
-      "target": "posttest.html"
-    },
-       
+
     {
       "unit-type": "task",
       "label": "Further Readings/References",
