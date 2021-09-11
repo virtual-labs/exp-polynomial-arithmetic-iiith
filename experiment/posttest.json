@@ -1,1 +1,60 @@
-[{"question":"1. Under regular addition of polynomials, the sum would contain a term 2x^6. This term becomes ____ and is dropped when the answer is reduced modulo 2. ","answers":{"a":"3x^6","b":"0x^6","c":"Doesn't change "},"correctAnswer":"b"},{"question":"2. Each term of the polynomial will be pointing to the other term and the last term will be pointing to ____.","answers":{"a":" Last coefficient","b":" First coefficient ","c":" Null  ","d":"The number itself"},"correctAnswer":"c"},{"question":"3. What are the advantages of using a linked list rather than array? ","answers":{"a":" List elements can be easily inserted or removed","b":"It is easy compared to array","c":" Both A and B ","d":"None of the above"},"correctAnswer":"a"},{"question":"4. Select any one of the advantage of using Arrays for performing polynomial arithmetic operations? ","answers":{"a":" It is straight forward process ","b":"Comparing the exponents is easy process ","c":" Array representation assumes that the exponents of the given expression are arranged from 0 to the infinity","d":"None of the above "},"correctAnswer":"a"}]
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. In a simple linked list node representing a polynomial expression, we need to keep track of either the exponent or the coefficient in a node. ",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "In order to implement arithmetic operations using linked lists, we need to keep track of both the exponent and the coefficient as well."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. A single pointer variable is enough for polynomial arithmetic using linked lists.",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "A single pointer variable will only be able to keep track of one of the two linked lists we ought to perform arithmetic operations on.",
+                "b": "Two pointer variables would be needed to perform any kind of arithmetic operation on two linked lists. Each pointer variable will keep track of the nodes of a single linked list it is assigned to."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. If the last term of a polynomial expression does not have an exponent part and only a coefficient, i.e., it is only a number, then how is it represented in a linked list node?",
+            "answers": {
+                "a": "The tuple would consist of two zeros",
+                "b": "The tuple would have the coefficient and for the exponent we store zero",
+                "c": "The tuple would have the coefficient stored twice",
+                "d": "We need not represent in a linked list node as it does not have an exponent part"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Representing the expression like this is logically inaccurate as we lose the information about the coefficient when we assume it is zero.",
+                "b": "This is the correct way to represent the desired expression. We do not lose the information about the coefficient and by placing zero in the exponent part we signify that there is no exponent associated with the coefficient.",
+                "c": "Although the information about the coefficient will be retained in this option, storing it in the exponent part would mean that it also has an exponent associated with it which is the same as the coefficient value. This would be logically inaccurate.",
+                "d": "Not representing an expression because it does not have an exponent would yield in loss of information and thus, wrong result."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "4. Polynomial Arithmetic operations can be implemented in Arrays using the same logic as implementing in Linked Lists, i.e., keeping track of Coefficients and Exponents.",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "The operation will be pretty much the same. Each array element will behave like a linked list node, i.e., it will have both the coefficient and exponent.",
+                "b": "The operation is not much different. An array element can be thought of as a linked list node."
+            },
+            "difficulty": "advanced"
+        }
+    ]
+}
