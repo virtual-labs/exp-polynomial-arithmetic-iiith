@@ -1,0 +1,79 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. In a linked list node, there are two fields. One of them is for holding the data but what is the other field?",
+            "answers": {
+                "a": "Pointer to next node",
+                "b": "Pointer to first node",
+                "c": "Pointer to last node",
+                "d": "Another data field"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Each linked list node has some data and a pointer to the next node.",
+                "b": "The other field contains a reference or pointer to another node, not necessarily the first node.",
+                "c": "The other field contains a reference or pointer to another node, not necessarily the last node.",
+                "d": "The other field contains a reference or pointer to another node, not data."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. What makes a Circular Linked List different from a normal Linked List?",
+            "answers": {
+                "a": "All nodes hold the address to the last node",
+                "b": "All nodes hold the address to the first node",
+                "c": "The first node holds the address of the last node",
+                "d": "The last node holds the address of the first node"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "d": "The circular chain functionality is enforced only when the last node will hold the address of the first node. In a normal linked list, the last node does not hold the address of any node, it is NULL."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. Random access of elements is one of the applications of linked lists.",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "b": "Elements are accessed sequentially in linked lists. Therefore, random access of elements is not an application of linked lists."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "4. Given a singly linked list of size \u2018n\u2019, what is the maximum number of comparisons required to search for a desired element?",
+            "answers": {
+                "a": "n/2",
+                "b": "n/4",
+                "c": "n",
+                "d": "log n"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "c": "In the worst case scenario, all the nodes of the singly linked list will have to be traversed to find the desired element."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "5. Which of the following sorting algorithms will take minimum time complexity to sort a linked list?",
+            "answers": {
+                "a": "Quick Sort",
+                "b": "Insertion Sort",
+                "c": "Merge Sort",
+                "d": "Heap Sort"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "Since random access of elements is very slow in linked lists, Quick Sort is ignored due to poor performance.",
+                "b": "Insertion sort can be used to sort random linked list but it\u2019s worst case complexity is O (n2) which is more than that of Merge Sort.",
+                "c": "Merge sort will be the best choice to sort a random linked list as its worst case time complexity is O (n log n).",
+                "d": "Since random access of elements is very slow in linked lists, Heap Sort is ignored due to poor performance."
+            },
+            "difficulty": "advanced"
+        }
+    ]
+}
