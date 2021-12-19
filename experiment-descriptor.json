@@ -22,7 +22,7 @@
     },
     {
       "unit-type": "task",
-      "label": "Pretest,
+      "label": "Pretest",
       "content-type": "assesment",
       "source": "pretest.json",
       "target": "pretest.html"
