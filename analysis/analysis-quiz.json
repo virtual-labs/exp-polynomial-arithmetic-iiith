@@ -1,0 +1,45 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. What is the worst case analysis used for?",
+            "answers": {
+                "a": "Used to find an upper bound on algorithm performance for large problems (large n)",
+                "b": "Used to find the upper bound on algorithm performance for small problems (small n)",
+                "c": "Used to find the lower bound on algorithm performance for small problems (small n)",
+                "d": "None of these"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Problems with large values of \u2018n\u2019 are fit to determine the worst case scenario for an algorithm. Looking for its upper bound will help determine the worst case complexity.",
+                "b": "Small problems that have small values for \u2018n\u2019 are not fit to determine the worst case scenario for an algorithm.",
+                "c": "Small problems that have small values for \u2018n\u2019 are not fit to determine the worst case scenario for an algorithm. Moreover, the focus is on finding the upper bound instead of lower bound."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "2. Time complexity expresses the relation between the size of the input and runtime for the algorithm",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "a",
+            "explanations": {},
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. Given two polynomials converted to linked list representation with nodes \u2018m\u2019 and \u2018n\u2019 respectively. What is the time complexity for adding them?",
+            "answers": {
+                "a": "O (m)",
+                "b": "O (n)",
+                "c": "O (m+n)",
+                "d": "O (log n)"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "c": "Since we need to traverse all the nodes of both the linked lists, the time complexity will be the sum of the number of nodes present in the linkest lists."
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+
+/home/runner/work/exp-polynomial-arithmetic-iiith/exp-polynomial-arithmetic-iiith/experiment/polynomial-arithmetic-linked-list/simulation/js/add-exercise.js
+  143:2  warning  Unnecessary semicolon          no-extra-semi
+  163:5  warning  'clickedReset' is not defined  no-undef
+
+/home/runner/work/exp-polynomial-arithmetic-iiith/exp-polynomial-arithmetic-iiith/experiment/polynomial-arithmetic-linked-list/simulation/js/add-practice.js
+  160:2  warning  Unnecessary semicolon  no-extra-semi
+  163:2  warning  Unnecessary semicolon  no-extra-semi
+
+/home/runner/work/exp-polynomial-arithmetic-iiith/exp-polynomial-arithmetic-iiith/experiment/polynomial-arithmetic-linked-list/simulation/js/demo.js
+  20:5   warning  'results' is not defined                      no-undef
+  21:9   warning  'counter' is assigned a value but never used  no-unused-vars
+  56:14  warning  'results' is not defined                      no-undef
+  64:1   warning  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+  69:1   warning  Mixed spaces and tabs                         no-mixed-spaces-and-tabs
+  80:1   warning  'timer' is not defined                        no-undef
+
+/home/runner/work/exp-polynomial-arithmetic-iiith/exp-polynomial-arithmetic-iiith/experiment/polynomial-arithmetic-linked-list/simulation/js/realization.js
+  1:5  warning  'realizationCatalog' is assigned a value but never used  no-unused-vars
+
+/home/runner/work/exp-polynomial-arithmetic-iiith/exp-polynomial-arithmetic-iiith/experiment/posttest.js
+  18:6   warning  'letter' is not defined  no-undef
+  22:63  warning  'letter' is not defined  no-undef
+  23:3   warning  'letter' is not defined  no-undef
+  24:27  warning  'letter' is not defined  no-undef
+
+✖ 15 problems (0 errors, 15 warnings)
+  0 errors and 3 warnings potentially fixable with the `--fix` option.
+
