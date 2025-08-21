@@ -55,17 +55,18 @@
 </style>
 </head>
 <body>
-    <div class="instruction-box">
-      <button class="collapsible">Instructions</button>
-      <div class="content">
-        <ul>
-          <li>Now you have to perform addition of two polynomials using Linked list</li>
-          <li>Please follow descending order in the powers while giving inputs</li>
-          <li>Click on the <b>Submit</b> button to submit</li>
-          <li>Click on the <b>Reset</b> button to reset restart the Exercise</li>
-        </ul>
+      <div class="instruction-box">
+        <button class="collapsible">Instructions</button>
+        <div class="content">
+          <ul>
+            <li>Perform addition of the two polynomials shown above using a linked list representation.</li>
+            <li>For the result polynomial R(x), enter each term as a <b>coefficient</b> and <b>power</b> pair in the table provided.</li>
+            <li>Enter terms in <b>descending order of power</b> (highest power first).</li>
+            <li>After submitting, the correct answer will show the final R(x) expression in bold below the table.</li>
+            <li>Click <b>Submit</b> to check your answer, or <b>Reset</b> to start over.</li>
+          </ul>
+        </div>
       </div>
-    </div>
       <br>
       <br>
     <div id="polynomial-eqs">
@@ -75,16 +76,41 @@
         <div id="arrow"></div>
     </div>    
         <div class="btn-wrapper" align="center">
-        R(x) = <input type="numbers" id="value1" size="1" value="" pattern="9"/> x ^
-            <input type="numbers" id="valuea" size="1" value="" style="width:25px;" pattern="4" />  + 
-            <input type="numbers" id="value2" size="1" value="" pattern="13" /> x ^ 
-            <input type="numbers" id="valueb" size="1" value="" style="width:25px;" pattern="3" /> +
-            <input type="numbers" id="value3" size="1" value="" pattern="3" /> x ^
-            <input type="numbers" id="valuec" size="1" value="" style="width:25px;" pattern="2" />  + 
-            <input type="numbers" id="value4" size="1" value="" pattern="6" /> x ^ 
-            <input type="numbers" id="valued" size="1" value="" style="width:25px;" pattern="1" /> +
-            <input type="numbers" id="value5" size="1" value="" pattern="9" /> x ^
-            <input type="numbers" id="valuee" size="1" value="" pattern="0" style="width:25px;"/>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <span style="font-weight: bold;">R(x) =</span>
+          <table style="margin-top: 10px;">
+            <tr>
+              <th style="padding: 4px;">Term</th>
+              <th style="padding: 4px;">Coefficient</th>
+              <th style="padding: 4px;">Power</th>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">1</td>
+              <td style="padding: 4px;"><input type="number" id="value1" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valuea" style="width:40px;"/></td>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">2</td>
+              <td style="padding: 4px;"><input type="number" id="value2" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valueb" style="width:40px;"/></td>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">3</td>
+              <td style="padding: 4px;"><input type="number" id="value3" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valuec" style="width:40px;"/></td>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">4</td>
+              <td style="padding: 4px;"><input type="number" id="value4" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valued" style="width:40px;"/></td>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">5</td>
+              <td style="padding: 4px;"><input type="number" id="value5" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valuee" style="width:40px;"/></td>
+            </tr>
+          </table>
+        </div>
             <br>
             <br>
             <br>
@@ -93,10 +119,12 @@
         <div id="solution" align="center"></div>
       </div>
       <br>
-      <div class="comment-box" id="comment-box-bigger" align="center" style="padding-left:265px;">
+      <div class="comment-box" id="comment-box-bigger" style="text-align:center; margin: 0 auto;">
         <b>Observations</b>
-        <p id="ins"></p>
+  <p id="ins" style="text-align:center;"></p>
+  <div id="final-rx" style="font-weight:bold; text-align:center; margin-top:10px;"></div>
       </div>
+      <br>
       <div class="buttons-wrapper" align="center">
         <input class="button-input" type="button" value="Submit" id="start">
         <input class="button-input" type="button" value="Reset" id="reset">
