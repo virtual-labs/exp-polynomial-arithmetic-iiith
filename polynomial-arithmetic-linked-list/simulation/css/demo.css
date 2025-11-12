@@ -1,0 +1,50 @@
+.card {
+display: inline-block;
+/* font-size: 1.5vw; */
+padding: 1.7%;
+margin: 0.05%;  
+color: blue;
+background-color: #288ec8;
+}
+
+.icon {
+position: relative;
+width: 80px;
+cursor: pointer;
+display: inline-block;
+/* font-size: 1.5vw; */
+top: -23px;
+left: 22px;
+}
+
+.arrow {
+position: relative;
+width: 97%;
+height: 3px;
+top:17px;
+left:-21px;
+background-color: #000;
+animation: arrow 700ms linear infinite;
+}
+
+.arrow::after {
+content: '';
+position: absolute;
+width: 15%;
+height: 3px;
+top: -2px;
+right: -3px;
+background-color: #000;
+transform: rotate(45deg);
+}
+
+.arrow::before {
+content: '';
+position: absolute;
+width: 14%;
+height: 3px;
+top: 3px;
+right: -2px;
+background-color: #000;
+transform: rotate(-45deg);
+}

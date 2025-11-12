@@ -1,0 +1,66 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. How is a polynomial stored using a linked list?",
+            "answers": {
+                "a": "Both exponent and coefficient are stored as a tuple in a linked list node",
+                "b": "Only coefficient is stored in the linked list node",
+                "c": "Only exponent is stored in the linked list node",
+                "d": "None of these"
+            },
+            "correctAnswer": "a",
+            "explanations": {},
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "2. In multiplication of polynomials using linked lists, what is the next step after multiplying each term of one polynomial with the other polynomial?",
+            "answers": {
+                "a": "Subtract the terms having the same coefficient",
+                "b": "Add the terms having the same coefficient",
+                "c": "Add the terms having the same exponent",
+                "d": "Multiply the terms having the same exponent again"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "This would be logically inaccurate as terms with different exponents cannot be simply added or subtracted.",
+                "b": "This would be logically inaccurate as terms with different exponents cannot be simply added or subtracted.",
+                "c": "The terms with the same exponent are then added to ensure that the obtained expression is in its simplified form. This also helps us to preserve space as we would have less number of linked list nodes.",
+                "d": "Multiplying the terms with the same exponent will give us a wrong answer. Try to think of the normal multiplication process of polynomials. Sometimes we end up with terms with the same exponents after the multiplication step and we carry out a basic arithmetic operation on them to simplify the expression."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "3. How is addition on polynomial expressions performed using linked lists?",
+            "answers": {
+                "a": "Subtract the coefficients having the same power component",
+                "b": "Add the coefficients that have the same power component",
+                "c": "Add the power components that have the same coefficient",
+                "d": "Add the sum of all power components and the sum of all coefficients"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "This is implementation of subtraction, not addition.",
+                "c": "This option is logically inaccurate as addition of polynomial expressions does not involve addition of exponents.",
+                "d": "This option is logically inaccurate as the sum of power components and sum of all coefficients do not account to anything in terms of arithmetics."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "4. How is subtraction on polynomial expressions performed using linked lists?",
+            "answers": {
+                "a": "Subtract the coefficients having the same power component",
+                "b": "Add the coefficients that have the same power component",
+                "c": "Subtract the power components that have the same coefficient",
+                "d": "Subtract the sum of all power components and the sum of all coefficients"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "b": "This is implementation of addition, not subtraction.",
+                "c": "This option is logically inaccurate as subtraction of polynomial expressions does not involve subtraction of exponents.",
+                "d": "This option is logically inaccurate as the difference between the sum of power components and sum of all coefficients do not account for anything in terms of arithmetics."
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}
