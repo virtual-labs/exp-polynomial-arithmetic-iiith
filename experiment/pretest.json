@@ -2,76 +2,155 @@
     "version": 2.0,
     "questions": [
         {
-            "question": "1. In a linked list node, there are two fields. One of them is for holding the data but what is the other field?",
+            "question": "1. In a linked-list representation of a polynomial, which information is normally stored in each term node?",
             "answers": {
-                "a": "Pointer to next node",
-                "b": "Pointer to first node",
-                "c": "Pointer to last node",
-                "d": "Another data field"
+                "a": "Coefficient and exponent",
+                "b": "Only coefficient",
+                "c": "Only exponent",
+                "d": "Coefficient and node position"
             },
             "correctAnswer": "a",
             "explanations": {
-                "a": "Each linked list node has some data and a pointer to the next node.",
-                "b": "The other field contains a reference or pointer to another node, not necessarily the first node.",
-                "c": "The other field contains a reference or pointer to another node, not necessarily the last node.",
-                "d": "The other field contains a reference or pointer to another node, not data."
+                "a": "Correct. A polynomial term is represented by storing its coefficient and exponent together in a node.",
+                "b": "Incorrect. Storing only the coefficient does not identify the power associated with that term.",
+                "c": "Incorrect. Storing only the exponent does not provide the numerical value of the term.",
+                "d": "Incorrect. The node position is not the information that defines a polynomial term."
             },
             "difficulty": "beginner"
         },
         {
-            "question": "2. What makes a Circular Linked List different from a normal Linked List?",
+            "question": "2. In a linked-list representation, how is the constant term $7$ represented as a coefficient-exponent pair?",
             "answers": {
-                "a": "All nodes hold the address to the last node",
-                "b": "All nodes hold the address to the first node",
-                "c": "The first node holds the address of the last node",
-                "d": "The last node holds the address of the first node"
-            },
-            "correctAnswer": "d",
-            "explanations": {
-                "d": "The circular chain functionality is enforced only when the last node will hold the address of the first node. In a normal linked list, the last node does not hold the address of any node, it is NULL."
-            },
-            "difficulty": "beginner"
-        },
-        {
-            "question": "3. Random access of elements is one of the applications of linked lists.",
-            "answers": {
-                "a": "True",
-                "b": "False"
+                "a": "$(0,7)$",
+                "b": "$(7,0)$",
+                "c": "$(7,1)$",
+                "d": "$(1,7)$"
             },
             "correctAnswer": "b",
             "explanations": {
-                "b": "Elements are accessed sequentially in linked lists. Therefore, random access of elements is not an application of linked lists."
+                "a": "Incorrect. This pair represents a coefficient of zero with exponent 7, so it does not represent the constant term $7$.",
+                "b": "Correct. A constant term has coefficient $7$ and exponent $0$, so its pair is $(7,0)$.",
+                "c": "Incorrect. An exponent of 1 would represent a term proportional to $x$, not a constant.",
+                "d": "Incorrect. This pair does not preserve the coefficient $7$ as the coefficient of the term."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. When adding two polynomial linked lists, what should be done when the current terms have the same exponent?",
+            "answers": {
+                "a": "Multiply their coefficients",
+                "b": "Compare their node addresses",
+                "c": "Add their coefficients",
+                "d": "Add their exponents"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "Incorrect. Multiplying coefficients is not the operation used to combine like terms during polynomial addition.",
+                "b": "Incorrect. Node addresses are implementation details and do not determine the arithmetic result.",
+                "c": "Correct. Terms with the same exponent are like terms, so their coefficients are added while the exponent is retained.",
+                "d": "Incorrect. The exponents of like terms are not added during polynomial addition."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "4. Suppose a polynomial is represented by nodes ordered by decreasing exponent. Which node should be encountered first for $5x^3 + 2x + 1$?",
+            "answers": {
+                "a": "The node for $1$",
+                "b": "The node for $2x$",
+                "c": "Any node, because order does not matter",
+                "d": "The node for $5x^3$"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "a": "Incorrect. The constant term has exponent $0$, which is lower than the other exponents.",
+                "b": "Incorrect. The term $2x$ has exponent $1$, so it does not come first when exponents are decreasing.",
+                "c": "Incorrect. The specified decreasing-exponent ordering gives a definite first node.",
+                "d": "Correct. The term $5x^3$ has the largest exponent, so it is the first node in decreasing-exponent order."
             },
             "difficulty": "intermediate"
         },
         {
-            "question": "4. Given a singly linked list of size \u2018n\u2019, what is the maximum number of comparisons required to search for a desired element?",
+            "question": "5. If two polynomial linked lists contain $m$ and $n$ terms respectively and both are traversed once to perform addition, what is the time complexity?",
             "answers": {
-                "a": "n/2",
-                "b": "n/4",
-                "c": "n",
-                "d": "log n"
+                "a": "$O(1)$",
+                "b": "$O(\\log(m+n))$",
+                "c": "$O(m+n)$",
+                "d": "$O(mn)$"
             },
             "correctAnswer": "c",
             "explanations": {
-                "c": "In the worst case scenario, all the nodes of the singly linked list will have to be traversed to find the desired element."
+                "a": "Incorrect. The operation may need to examine terms throughout both linked lists, so its work is not constant.",
+                "b": "Incorrect. A linked-list traversal is sequential and does not reduce the work to logarithmic time.",
+                "c": "Correct. Each list is traversed at most once, so the total number of visited nodes is proportional to $m+n$.",
+                "d": "Incorrect. Polynomial addition does not require comparing every term of one list with every term of the other list when the lists are processed in order."
             },
             "difficulty": "intermediate"
         },
         {
-            "question": "5. Which of the following sorting algorithms will take minimum time complexity to sort a linked list?",
+            "question": "6. During polynomial addition, the current exponents are $4$ and $2$. What should the algorithm do when the lists are maintained in decreasing exponent order?",
             "answers": {
-                "a": "Quick Sort",
-                "b": "Insertion Sort",
-                "c": "Merge Sort",
-                "d": "Heap Sort"
+                "a": "Add the coefficients and advance both lists",
+                "b": "Discard both terms",
+                "c": "Multiply the two coefficients",
+                "d": "Advance the list whose current exponent is smaller"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "a": "Incorrect. Coefficients are combined when the exponents match; here the exponents are different.",
+                "b": "Incorrect. A term with a different exponent still contributes to the result.",
+                "c": "Incorrect. Multiplication is not the operation being performed during polynomial addition.",
+                "d": "Correct. With decreasing exponent order, the smaller exponent is behind the larger one, so its term is handled by advancing that list."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "7. What is the main advantage of using a linked list for a sparse polynomial?",
+            "answers": {
+                "a": "It stores only the nonzero terms that are present",
+                "b": "It guarantees constant-time access to every term",
+                "c": "It automatically sorts terms without any comparisons",
+                "d": "It removes the need to store coefficients"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Correct. A linked list can represent a sparse polynomial by creating nodes only for terms that need to be stored.",
+                "b": "Incorrect. Linked lists require sequential traversal, so arbitrary term access is not generally constant time.",
+                "c": "Incorrect. Ordering depends on how nodes are created or processed; a linked list does not automatically sort its terms.",
+                "d": "Incorrect. Coefficients are essential information and must still be stored for each represented term."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "8. If two terms $3x^4$ and $5x^4$ are encountered while adding two polynomial linked lists, what term should be placed in the result?",
+            "answers": {
+                "a": "$8x^8$",
+                "b": "$15x^4$",
+                "c": "$8x^4$",
+                "d": "$2x^4$"
             },
             "correctAnswer": "c",
             "explanations": {
-                "a": "Since random access of elements is very slow in linked lists, Quick Sort is ignored due to poor performance.",
-                "b": "Insertion sort can be used to sort random linked list but it\u2019s worst case complexity is O (n2) which is more than that of Merge Sort.",
-                "c": "Merge sort will be the best choice to sort a random linked list as its worst case time complexity is O (n log n).",
-                "d": "Since random access of elements is very slow in linked lists, Heap Sort is ignored due to poor performance."
+                "a": "Incorrect. Adding like terms does not add their exponents.",
+                "b": "Incorrect. Multiplying the coefficients is not the required operation for polynomial addition.",
+                "c": "Correct. The coefficients $3$ and $5$ are added, while the common exponent $4$ is retained, giving $8x^4$.",
+                "d": "Incorrect. Subtracting the coefficients would correspond to a different arithmetic operation."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "9. If a polynomial has $m$ terms and another polynomial has $n$ terms, what is the worst-case number of nodes that an addition algorithm may need to process?",
+            "answers": {
+                "a": "$mn$",
+                "b": "$m+n$",
+                "c": "$m-n$",
+                "d": "$\\log(m+n)$"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. Polynomial addition does not require a separate operation for every pair of terms.",
+                "b": "Correct. In the worst case, the algorithm processes every node in both lists, giving $m+n$ nodes to process.",
+                "c": "Incorrect. The difference in list sizes does not represent the total number of nodes that may need to be processed.",
+                "d": "Incorrect. Processing linked-list nodes is sequential rather than logarithmic."
             },
             "difficulty": "advanced"
         }

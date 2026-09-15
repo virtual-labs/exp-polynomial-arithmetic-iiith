@@ -2,65 +2,157 @@
     "version": 2.0,
     "questions": [
         {
-            "question": "1. How is a polynomial stored using a linked list?",
+            "question": "1. Which two pieces of information are essential for representing a polynomial term in a linked-list node?",
             "answers": {
-                "a": "Both exponent and coefficient are stored as a tuple in a linked list node",
-                "b": "Only coefficient is stored in the linked list node",
-                "c": "Only exponent is stored in the linked list node",
-                "d": "None of these"
+                "a": "Coefficient and exponent",
+                "b": "Node index and memory address",
+                "c": "Exponent and next node only",
+                "d": "Coefficient and list length"
             },
             "correctAnswer": "a",
-            "explanations": {},
-            "difficulty": "intermediate"
+            "explanations": {
+                "a": "Correct. A polynomial term is defined by its coefficient and exponent, which must be stored for arithmetic operations.",
+                "b": "Incorrect. Node index and memory address are implementation details and do not define the polynomial term.",
+                "c": "Incorrect. The coefficient is required to determine the numerical value of the term.",
+                "d": "Incorrect. The list length does not replace the exponent information of a term."
+            },
+            "difficulty": "beginner"
         },
         {
-            "question": "2. In multiplication of polynomials using linked lists, what is the next step after multiplying each term of one polynomial with the other polynomial?",
+            "question": "2. How should the constant term $-6$ be represented as a coefficient-exponent pair?",
             "answers": {
-                "a": "Subtract the terms having the same coefficient",
-                "b": "Add the terms having the same coefficient",
-                "c": "Add the terms having the same exponent",
-                "d": "Multiply the terms having the same exponent again"
+                "a": "$(0,-6)$",
+                "b": "$(-6,1)$",
+                "c": "$(-6,0)$",
+                "d": "$(6,0)$"
             },
             "correctAnswer": "c",
             "explanations": {
-                "a": "This would be logically inaccurate as terms with different exponents cannot be simply added or subtracted.",
-                "b": "This would be logically inaccurate as terms with different exponents cannot be simply added or subtracted.",
-                "c": "The terms with the same exponent are then added to ensure that the obtained expression is in its simplified form. This also helps us to preserve space as we would have less number of linked list nodes.",
-                "d": "Multiplying the terms with the same exponent will give us a wrong answer. Try to think of the normal multiplication process of polynomials. Sometimes we end up with terms with the same exponents after the multiplication step and we carry out a basic arithmetic operation on them to simplify the expression."
+                "a": "Incorrect. A zero coefficient would represent a zero term rather than the constant $-6$.",
+                "b": "Incorrect. An exponent of 1 would represent a term involving $x$.",
+                "c": "Correct. The coefficient is $-6$ and a constant has exponent $0$, giving $(-6,0)$.",
+                "d": "Incorrect. This changes the sign of the coefficient and therefore represents a different term."
             },
-            "difficulty": "intermediate"
+            "difficulty": "beginner"
         },
         {
-            "question": "3. How is addition on polynomial expressions performed using linked lists?",
+            "question": "3. In a linked-list representation of a polynomial, what does the pointer field of a node primarily provide?",
             "answers": {
-                "a": "Subtract the coefficients having the same power component",
-                "b": "Add the coefficients that have the same power component",
-                "c": "Add the power components that have the same coefficient",
-                "d": "Add the sum of all power components and the sum of all coefficients"
+                "a": "The exponent of the next term",
+                "b": "A link to the next node",
+                "c": "The coefficient of the current term",
+                "d": "The degree of the polynomial"
             },
             "correctAnswer": "b",
             "explanations": {
-                "a": "This is implementation of subtraction, not addition.",
-                "c": "This option is logically inaccurate as addition of polynomial expressions does not involve addition of exponents.",
-                "d": "This option is logically inaccurate as the sum of power components and sum of all coefficients do not account to anything in terms of arithmetics."
+                "a": "Incorrect. The pointer identifies another node rather than storing the exponent value of that node.",
+                "b": "Correct. The pointer connects the current node to the next node in the linked list.",
+                "c": "Incorrect. The coefficient belongs to the data stored for the current polynomial term.",
+                "d": "Incorrect. The degree is a property of the polynomial and is not what the pointer field represents."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "4. When adding two polynomial linked lists, what is the correct action when the current exponents are equal?",
+            "answers": {
+                "a": "Add the exponents",
+                "b": "Subtract the coefficients",
+                "c": "Ignore both nodes",
+                "d": "Add the coefficients and keep the common exponent"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "a": "Incorrect. Equal exponents identify like terms; their exponents are not added during polynomial addition.",
+                "b": "Incorrect. Subtracting coefficients is not the rule for addition.",
+                "c": "Incorrect. Equal-exponent terms contribute directly to the result.",
+                "d": "Correct. The coefficients of like terms are added, and the common exponent is retained in the result."
             },
             "difficulty": "intermediate"
         },
         {
-            "question": "4. How is subtraction on polynomial expressions performed using linked lists?",
+            "question": "5. When adding two polynomial linked lists, the current exponent in the first list is $5$ and in the second list is $3$. Which term should be processed before the other?",
             "answers": {
-                "a": "Subtract the coefficients having the same power component",
-                "b": "Add the coefficients that have the same power component",
-                "c": "Subtract the power components that have the same coefficient",
-                "d": "Subtract the sum of all power components and the sum of all coefficients"
+                "a": "The term with exponent $5$",
+                "b": "The term with exponent $3$",
+                "c": "Both terms must be multiplied",
+                "d": "Neither term should be processed"
             },
             "correctAnswer": "a",
             "explanations": {
-                "b": "This is implementation of addition, not subtraction.",
-                "c": "This option is logically inaccurate as subtraction of polynomial expressions does not involve subtraction of exponents.",
-                "d": "This option is logically inaccurate as the difference between the sum of power components and sum of all coefficients do not account for anything in terms of arithmetics."
+                "a": "Correct. With decreasing-exponent order, the term with the larger exponent occurs earlier and is processed first.",
+                "b": "Incorrect. The exponent $3$ term occurs later when the list is ordered in decreasing exponent order.",
+                "c": "Incorrect. Multiplication is not part of the comparison step in polynomial addition.",
+                "d": "Incorrect. Both terms must eventually be considered for the addition."
             },
             "difficulty": "intermediate"
+        },
+        {
+            "question": "6. What should happen to a term from one polynomial when its exponent does not occur in the other polynomial during addition?",
+            "answers": {
+                "a": "Its coefficient should be multiplied by zero and the term discarded",
+                "b": "Its exponent should be changed to match the other term",
+                "c": "The term should be copied to the result without combining it with a term from the other polynomial",
+                "d": "The entire polynomial should be discarded"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "Incorrect. Discarding the term would lose information that contributes to the polynomial sum.",
+                "b": "Incorrect. Changing an exponent changes the meaning of the term and is not part of addition.",
+                "c": "Correct. A term with no matching exponent is carried to the result as it is.",
+                "d": "Incorrect. One unmatched term does not invalidate the rest of the polynomial operation."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "7. In straightforward multiplication of two polynomial linked lists, why can the result initially contain multiple terms with the same exponent?",
+            "answers": {
+                "a": "Because the pointer field changes the exponent",
+                "b": "Because different pairs of input terms can produce the same sum of exponents",
+                "c": "Because coefficients are stored as pointers",
+                "d": "Because linked lists cannot store unique exponents"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. The pointer field controls links between nodes and does not change exponent values.",
+                "b": "Correct. Different pairs of terms can have exponents whose sums are equal, producing like terms in the intermediate result.",
+                "c": "Incorrect. Coefficients are data values and are not represented by pointer fields.",
+                "d": "Incorrect. A linked list can store terms with unique exponents; repeated exponents arise from the multiplication combinations."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "8. What is the result of multiplying $(2x^3)(-4x^2)$?",
+            "answers": {
+                "a": "$-8x^6$",
+                "b": "$-6x^5$",
+                "c": "$8x^5$",
+                "d": "$-8x^5$"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "a": "Incorrect. The coefficients are multiplied correctly in magnitude, but the exponents are not multiplied.",
+                "b": "Incorrect. Multiplying coefficients does not involve subtracting their values.",
+                "c": "Incorrect. The product of a positive and a negative coefficient must have a negative sign.",
+                "d": "Correct. The coefficients give $2(-4)=-8$, and the exponents add to $3+2=5$, giving $-8x^5$."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "9. Which statement best explains why linked lists are useful for sparse polynomial representation?",
+            "answers": {
+                "a": "They require every possible exponent to be stored",
+                "b": "They can store only the terms that are present, avoiding nodes for missing terms",
+                "c": "They provide direct indexing by exponent",
+                "d": "They eliminate the need for polynomial arithmetic"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. Storing every possible exponent would reduce the advantage of a sparse representation.",
+                "b": "Correct. A linked list can create nodes only for terms that occur, which avoids storing absent terms explicitly.",
+                "c": "Incorrect. Linked lists do not provide direct indexing by exponent.",
+                "d": "Incorrect. The purpose of the representation is to support polynomial operations, not to eliminate them."
+            },
+            "difficulty": "advanced"
         }
     ]
 }
