@@ -2,6 +2,7 @@
   "unit-type": "lu",
   "label": "Polynomial Arithmetic",
   "basedir": ".",
+  "LaTeXinMD": "true",
   "units": [
     {
       "unit-type": "aim"
@@ -42,7 +43,7 @@
           "source": "overview.md",
           "target": "overview.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Algorithm",
           "content-type": "video",
@@ -56,7 +57,6 @@
           "source": "representation.md",
           "target": "representation.html"
         }
-       
       ]
     },
     {
@@ -67,7 +67,7 @@
         {
           "unit-type": "aim"
         },
-	
+
         {
           "unit-type": "task",
           "label": "Addition",
@@ -75,14 +75,14 @@
           "source": "addition-of-polynomials.md",
           "target": "addition-of-polynomials.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Subtraction",
           "content-type": "video",
           "source": "subtraction-of-polynomials.md",
           "target": "subtraction-of-polynomials.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Multiplication",
           "content-type": "video",
@@ -96,14 +96,14 @@
           "source": "simulation/poly-demo.html",
           "target": "poly-demo.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Practice",
           "content-type": "simulation",
           "source": "simulation/poly-add-practice.html",
           "target": "poly-add-practice.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Exercise",
           "content-type": "simulation",
@@ -111,15 +111,15 @@
           "target": "poly-add-exercise.html"
         },
         {
-         "unit-type": "task",
-         "label": "Quiz",
-         "content-type": "assesment",
-         "source": "polynomials-quiz.json",
-         "target": "polynomials-quiz.html"
-       }
+          "unit-type": "task",
+          "label": "Quiz",
+          "content-type": "assesment",
+          "source": "polynomials-quiz.json",
+          "target": "polynomials-quiz.html"
+        }
       ]
     },
-        {
+    {
       "unit-type": "lu",
       "label": "Analysis",
       "basedir": "analysis",
@@ -127,7 +127,7 @@
         {
           "unit-type": "aim"
         },
-	
+
         {
           "unit-type": "task",
           "label": "Time and Space Complexity",
@@ -141,10 +141,10 @@
           "content-type": "assesment",
           "source": "analysis-quiz.json",
           "target": "analysis-quiz.html"
-        }       
+        }
       ]
     },
-    
+
     {
       "unit-type": "task",
       "label": "Posttest",
@@ -152,7 +152,7 @@
       "source": "posttest.json",
       "target": "posttest.html"
     },
-       
+
     {
       "unit-type": "task",
       "label": "Further Readings/References",
