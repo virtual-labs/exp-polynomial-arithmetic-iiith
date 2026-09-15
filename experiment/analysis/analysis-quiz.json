@@ -2,44 +2,157 @@
     "version": 2.0,
     "questions": [
         {
-            "question": "1. What is the worst case analysis used for?",
+            "question": "1. What does time complexity describe for a polynomial arithmetic algorithm?",
             "answers": {
-                "a": "Used to find an upper bound on algorithm performance for large problems (large n)",
-                "b": "Used to find the upper bound on algorithm performance for small problems (small n)",
-                "c": "Used to find the lower bound on algorithm performance for small problems (small n)",
-                "d": "None of these"
+                "a": "The physical size of each linked-list node",
+                "b": "How the running time grows with the input size",
+                "c": "The memory address of the first node",
+                "d": "The numerical value of the polynomial"
             },
-            "correctAnswer": "a",
+            "correctAnswer": "b",
             "explanations": {
-                "a": "Problems with large values of \u2018n\u2019 are fit to determine the worst case scenario for an algorithm. Looking for its upper bound will help determine the worst case complexity.",
-                "b": "Small problems that have small values for \u2018n\u2019 are not fit to determine the worst case scenario for an algorithm.",
-                "c": "Small problems that have small values for \u2018n\u2019 are not fit to determine the worst case scenario for an algorithm. Moreover, the focus is on finding the upper bound instead of lower bound."
+                "a": "Incorrect. Node size is related to storage requirements, not the definition of running-time growth.",
+                "b": "Correct. Time complexity describes how the computational work or running time grows as the input size increases.",
+                "c": "Incorrect. A memory address does not describe the running-time growth of an algorithm.",
+                "d": "Incorrect. The value of a polynomial is separate from the algorithm's time complexity."
             },
-            "difficulty": "intermediate"
-        },
-        {
-            "question": "2. Time complexity expresses the relation between the size of the input and runtime for the algorithm",
-            "answers": {
-                "a": "True",
-                "b": "False"
-            },
-            "correctAnswer": "a",
-            "explanations": {},
             "difficulty": "beginner"
         },
         {
-            "question": "3. Given two polynomials converted to linked list representation with nodes \u2018m\u2019 and \u2018n\u2019 respectively. What is the time complexity for adding them?",
+            "question": "2. If a polynomial has $n$ terms, what does $n$ represent when analyzing the running time of a linked-list polynomial algorithm?",
             "answers": {
-                "a": "O (m)",
-                "b": "O (n)",
-                "c": "O (m+n)",
-                "d": "O (log n)"
+                "a": "The number of term nodes in the polynomial representation",
+                "b": "The coefficient of the highest-degree term",
+                "c": "The highest exponent in every polynomial",
+                "d": "The number of pointer variables used"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Correct. In a linked-list representation, $n$ can denote the number of nodes or terms that the algorithm may need to process.",
+                "b": "Incorrect. A coefficient is a numerical value and is not generally the input-size measure $n$.",
+                "c": "Incorrect. The highest exponent and the number of stored terms are different quantities.",
+                "d": "Incorrect. The number of pointer variables is an implementation detail and is not the usual input-size measure."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. What is the main purpose of worst-case analysis for polynomial arithmetic algorithms?",
+            "answers": {
+                "a": "To find the smallest possible input",
+                "b": "To determine the exact running time on every input",
+                "c": "To estimate an upper bound on running time as input size grows",
+                "d": "To determine the coefficient of the final term"
             },
             "correctAnswer": "c",
             "explanations": {
-                "c": "Since we need to traverse all the nodes of both the linked lists, the time complexity will be the sum of the number of nodes present in the linkest lists."
+                "a": "Incorrect. Worst-case analysis is not intended to identify the smallest input.",
+                "b": "Incorrect. Complexity analysis generally describes growth rather than predicting an exact running time for every input.",
+                "c": "Correct. Worst-case analysis provides an upper-bound view of the computational work as the input size increases.",
+                "d": "Incorrect. The coefficient of a polynomial term is an arithmetic result, not a complexity measure."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "4. Two polynomials contain $m$ and $n$ terms. If addition traverses both lists once, what is its time complexity?",
+            "answers": {
+                "a": "$O(mn)$",
+                "b": "$O(m+n)$",
+                "c": "$O(m-n)$",
+                "d": "$O(1)$"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. A single sequential traversal of both lists does not require processing every pair of terms.",
+                "b": "Correct. The algorithm processes at most the $m$ nodes of one list and the $n$ nodes of the other, giving $O(m+n)$.",
+                "c": "Incorrect. The difference in the number of terms does not represent the total amount of traversal work.",
+                "d": "Incorrect. The number of nodes processed grows with $m$ and $n$, so the work is not constant."
             },
             "difficulty": "intermediate"
+        },
+        {
+            "question": "5. In straightforward polynomial multiplication, each of $m$ terms in one list is multiplied with each of $n$ terms in the other list. What is the time complexity of these multiplications?",
+            "answers": {
+                "a": "$O(m+n)$",
+                "b": "$O(m)$",
+                "c": "$O(n)$",
+                "d": "$O(mn)$"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "a": "Incorrect. This expression does not account for the pairwise combinations of terms.",
+                "b": "Incorrect. The work also depends on the number of terms in the second polynomial.",
+                "c": "Incorrect. The work also depends on the number of terms in the first polynomial.",
+                "d": "Correct. There are $m$ choices from the first list and $n$ choices from the second list, giving $mn$ term pairs."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "6. If a polynomial linked list contains $n$ terms, what is the time complexity of a single complete traversal of that list?",
+            "answers": {
+                "a": "$O(n)$",
+                "b": "$O(1)$",
+                "c": "$O(\\log n)$",
+                "d": "$O(n^2)$"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Correct. A complete traversal visits each of the $n$ nodes once, so the work grows linearly with $n$.",
+                "b": "Incorrect. The algorithm must visit more nodes as $n$ increases, so the work is not constant.",
+                "c": "Incorrect. Sequentially visiting all linked-list nodes is not logarithmic.",
+                "d": "Incorrect. A single traversal does not require processing every pair of nodes."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "7. Suppose polynomial addition processes two lists of $m$ and $n$ nodes using sequential traversal, and $m \\leq n$. Which asymptotic expression is also a valid simplified upper bound?",
+            "answers": {
+                "a": "$O(m)$",
+                "b": "$O(mn)$",
+                "c": "$O(n)$",
+                "d": "$O(1)$"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "Incorrect. The longer list may contain $n$ nodes that still need to be processed.",
+                "b": "Incorrect. Pairwise processing is not required for sequential polynomial addition.",
+                "c": "Correct. Since $m \\leq n$, $m+n \\leq 2n$, so $O(m+n)$ can be simplified to $O(n)$.",
+                "d": "Incorrect. The number of processed nodes increases with the input size."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "8. A straightforward multiplication algorithm performs $mn$ term multiplications. If both polynomials have $n$ terms, what is the resulting time complexity?",
+            "answers": {
+                "a": "$O(n)$",
+                "b": "$O(n^2)$",
+                "c": "$O(\\log n)$",
+                "d": "$O(1)$"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. Multiplying two $n$-term polynomials creates $n^2$ term pairs in the straightforward approach.",
+                "b": "Correct. Substituting $m=n$ into $O(mn)$ gives $O(n^2)$.",
+                "c": "Incorrect. The number of term pairs grows much faster than logarithmically.",
+                "d": "Incorrect. The amount of work increases with the number of terms."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "9. Which change would most directly reduce unnecessary work when adding two polynomial linked lists already sorted by decreasing exponent?",
+            "answers": {
+                "a": "Compare the current exponents and advance only the appropriate list when they differ",
+                "b": "Restart both traversals after every comparison",
+                "c": "Multiply every pair of coefficients before comparing exponents",
+                "d": "Ignore the exponent field and compare only node addresses"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Correct. Using the exponent ordering allows the algorithm to advance through the lists without repeatedly reconsidering already processed nodes.",
+                "b": "Incorrect. Restarting traversals would introduce unnecessary repeated work.",
+                "c": "Incorrect. Pairwise coefficient multiplication is not required for polynomial addition.",
+                "d": "Incorrect. Node addresses do not determine which polynomial terms are like terms."
+            },
+            "difficulty": "advanced"
         }
     ]
 }
