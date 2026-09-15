@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/demo.css">
+  <link rel="stylesheet" href="../../assets/css/common-styles-responsive.css">
+<style>
+  .card {
+    display: inline-block;
+    font-size: 1.5vw;
+    padding: 1.2%;
+    margin: 0.05%;  
+    color: white;
+    background-color: #288ec8;
+}
+  .arrow {
+  position: relative;
+  background-color: #000;
+  width: 35%;
+  height: 3px;
+  top:17px;
+  left:-21px;
+}
+
+  .arrow::after {
+  content: '';
+  position: absolute;
+  width: 35%;
+  height: 3px;
+  top: -3px;
+  right: -3px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+  .arrow::before {
+  content: '';
+  position: absolute;
+  width: 35%;
+  height: 3px;
+  top: 3px;
+  right: -3px;
+  background-color: #000;
+  transform: rotate(-45deg);
+}
+  .icon {
+    position: relative;
+    width: 80px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5vw;
+    top: -23px;
+    left: 22px;
+}
+</style>
+</head>
+<body>
+      <div class="instruction-box">
+        <button class="collapsible">Instructions</button>
+        <div class="content">
+          <ul>
+            <li>Perform addition of the two polynomials shown above using a linked list representation.</li>
+            <li>For the result polynomial R(x), enter each term as a <b>coefficient</b> and <b>power</b> pair in the table provided.</li>
+            <li>Enter terms in <b>descending order of power</b> (highest power first).</li>
+            <li>After submitting, the correct answer will show the final R(x) expression in bold below the table.</li>
+            <li>Click <b>Submit</b> to check your answer, or <b>Reset</b> to start over.</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+    <div id="polynomial-eqs">
+        <div id="expr1" align="center"></div><br/> <br>
+        <div id="expr2" align="center"></div><br/> <br>
+        <div id="card" ></div>
+        <div id="arrow"></div>
+    </div>    
+        <div class="btn-wrapper" align="center">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <span style="font-weight: bold;">R(x) =</span>
+          <table style="margin-top: 10px;">
+            <tr>
+              <th style="padding: 4px;">Term</th>
+              <th style="padding: 4px;">Coefficient</th>
+              <th style="padding: 4px;">Power</th>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">1</td>
+              <td style="padding: 4px;"><input type="number" id="value1" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valuea" style="width:40px;"/></td>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">2</td>
+              <td style="padding: 4px;"><input type="number" id="value2" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valueb" style="width:40px;"/></td>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">3</td>
+              <td style="padding: 4px;"><input type="number" id="value3" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valuec" style="width:40px;"/></td>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">4</td>
+              <td style="padding: 4px;"><input type="number" id="value4" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valued" style="width:40px;"/></td>
+            </tr>
+            <tr>
+              <td style="padding: 4px;">5</td>
+              <td style="padding: 4px;"><input type="number" id="value5" style="width:60px;"/></td>
+              <td style="padding: 4px;"><input type="number" id="valuee" style="width:40px;"/></td>
+            </tr>
+          </table>
+        </div>
+            <br>
+            <br>
+            <br>
+        </div>
+      <div>
+        <div id="solution" align="center"></div>
+      </div>
+      <br>
+      <div class="comment-box" id="comment-box-bigger" style="text-align:center; margin: 0 auto;">
+        <b>Observations</b>
+  <p id="ins" style="text-align:center;"></p>
+  <div id="final-rx" style="font-weight:bold; text-align:center; margin-top:10px;"></div>
+      </div>
+      <br>
+      <div class="buttons-wrapper" align="center">
+        <input class="button-input" type="button" value="Submit" id="start">
+        <input class="button-input" type="button" value="Reset" id="reset">
+      </div> 
+    </div>
+    <script src="js/add-exercise.js"></script>
+    <script src="../../assets/js/instruction-box.js"></script>
+    <script src="../../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>

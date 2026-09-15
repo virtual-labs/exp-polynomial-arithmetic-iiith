@@ -1,0 +1,158 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. Which pair of values correctly represents the term $-4x^5$ in a polynomial linked-list node?",
+            "answers": {
+                "a": "$(5,-4)$",
+                "b": "$(-4,5)$",
+                "c": "$(4,-5)$",
+                "d": "$(-5,4)$"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. This pair places the exponent in the coefficient position and changes the meaning of the term.",
+                "b": "Correct. The coefficient is $-4$ and the exponent is $5$, so the pair is $(-4,5)$.",
+                "c": "Incorrect. The signs and positions do not represent the term $-4x^5$.",
+                "d": "Incorrect. This pair does not preserve the coefficient and exponent of the given term."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. When representing the polynomial $6x^3 - 2x + 9$ as a linked list, how many term nodes are required?",
+            "answers": {
+                "a": "2",
+                "b": "3",
+                "c": "4",
+                "d": "9"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. The polynomial contains three distinct terms, not two.",
+                "b": "Correct. The polynomial has the three terms $6x^3$, $-2x$, and $9$, so three nodes are required.",
+                "c": "Incorrect. There are not four distinct terms in the polynomial.",
+                "d": "Incorrect. The value $9$ is a coefficient of one term, not the number of nodes."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. During polynomial addition, what should happen when the current exponents are equal?",
+            "answers": {
+                "a": "Add the coefficients and create one result term with that exponent",
+                "b": "Add the exponents and keep both coefficients",
+                "c": "Discard both terms",
+                "d": "Multiply the coefficients and exponents"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Correct. Equal exponents identify like terms, so their coefficients are combined into one result term with the common exponent.",
+                "b": "Incorrect. The exponents of like terms are not added during polynomial addition.",
+                "c": "Incorrect. Equal-exponent terms contribute to the result and should not be discarded.",
+                "d": "Incorrect. Multiplying coefficients and exponents is not the rule for polynomial addition."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "4. What is the result of adding $3x^2 + 4x$ and $5x^2 - x$?",
+            "answers": {
+                "a": "$8x^4 + 3x$",
+                "b": "$2x^2 + 5x$",
+                "c": "$8x^2 + 3x$",
+                "d": "$15x^2 - 4x$"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "Incorrect. The exponents of like terms are not added when the polynomials are added.",
+                "b": "Incorrect. The coefficients and signs are not combined correctly for the two like powers.",
+                "c": "Correct. The $x^2$ coefficients give $3+5=8$, and the $x$ coefficients give $4+(-1)=3$, producing $8x^2+3x$.",
+                "d": "Incorrect. This result uses multiplication-like combinations rather than adding corresponding coefficients."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "5. What is the result of subtracting $2x^2 + 3x$ from $7x^2 + x$?",
+            "answers": {
+                "a": "$9x^2 + 4x$",
+                "b": "$5x^2 - 2x$",
+                "c": "$14x^2 + 3x$",
+                "d": "$5x^2 + 4x$"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. Adding the corresponding coefficients would produce a different operation from the stated subtraction.",
+                "b": "Correct. Subtracting corresponding coefficients gives $(7-2)x^2 + (1-3)x = 5x^2-2x$.",
+                "c": "Incorrect. Multiplying the coefficients is not the operation required for polynomial subtraction.",
+                "d": "Incorrect. The coefficient of $x$ must account for subtracting $3x$ from $x$."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "6. Two polynomial linked lists contain $m$ and $n$ nodes. What is the time complexity of multiplying the two polynomials using the straightforward term-by-term approach?",
+            "answers": {
+                "a": "$O(1)$",
+                "b": "$O(m+n)$",
+                "c": "$O(\\log(m+n))$",
+                "d": "$O(mn)$"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "a": "Incorrect. The multiplication process depends on the number of terms in both input polynomials.",
+                "b": "Incorrect. This does not account for processing combinations of terms from the two input lists.",
+                "c": "Incorrect. Linked-list traversal and term combinations do not produce logarithmic complexity in this approach.",
+                "d": "Correct. Each of the $m$ terms may be multiplied with each of the $n$ terms, resulting in $O(mn)$ term multiplications."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "7. Why is it necessary to combine terms with the same exponent after polynomial multiplication?",
+            "answers": {
+                "a": "To change every exponent to zero",
+                "b": "To ensure the result is simplified and equivalent terms are represented together",
+                "c": "To remove all coefficients from the result",
+                "d": "To make every linked list contain the same number of nodes"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "Incorrect. Changing exponents to zero would change the meaning of the polynomial terms.",
+                "b": "Correct. Products of different term pairs can produce the same exponent, so combining like terms gives a simplified polynomial representation.",
+                "c": "Incorrect. Coefficients are required to represent the values of the resulting terms.",
+                "d": "Incorrect. Polynomial multiplication does not require the input and output lists to have equal numbers of nodes."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "8. If $2x^3$ is multiplied by $5x^2$, what term is produced before combining it with any other like terms?",
+            "answers": {
+                "a": "$10x^5$",
+                "b": "$7x^6$",
+                "c": "$10x^6$",
+                "d": "$7x^5$"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "Correct. The coefficients are multiplied to give $10$, and the exponents are added to give $5$, producing $10x^5$.",
+                "b": "Incorrect. The coefficients are not added, and the resulting exponent does not follow multiplication of powers.",
+                "c": "Incorrect. The coefficient multiplication is correct, but the exponent value is not obtained by multiplying the exponents.",
+                "d": "Incorrect. Both the coefficient and exponent operations are inconsistent with multiplication of the two terms."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "9. Which statement best describes polynomial addition using two linked lists ordered by decreasing exponent?",
+            "answers": {
+                "a": "Every node in the first list must be compared with every node in the second list",
+                "b": "Only the first node of each list is used",
+                "c": "The lists can be processed sequentially by comparing current exponents",
+                "d": "The lists must first be converted into arrays"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "Incorrect. Such an approach is unnecessary when the terms are already maintained in a compatible exponent order.",
+                "b": "Incorrect. The complete polynomial may contain many terms, so processing only the first nodes is insufficient.",
+                "c": "Correct. Comparing current exponents allows the algorithm to combine like terms and advance through the lists sequentially.",
+                "d": "Incorrect. Polynomial addition can be performed directly on linked lists without converting them into arrays."
+            },
+            "difficulty": "advanced"
+        }
+    ]
+}
